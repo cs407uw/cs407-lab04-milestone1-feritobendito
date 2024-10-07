@@ -36,7 +36,7 @@ class MainActivity : AppCompatActivity() {
             Log.d(TAG, "Download Progress $downloadProgress%")
             withContext(Dispatchers.Main) {
                 val progressText = findViewById<TextView>(R.id.progressText)
-                progressText.text = "Download Progress: $downloadProgress%"
+                progressText.text = "Download Progress $downloadProgress%"
             }
             delay(1000)
         }
@@ -44,7 +44,9 @@ class MainActivity : AppCompatActivity() {
 
         withContext(Dispatchers.Main) {
             val startButton = findViewById<Button>(R.id.start)
+            val progressText = findViewById<TextView>(R.id.progressText)
             startButton.text = getString(R.string.start)
+            progressText.text = getString(R.string.complete)
         }
     }
 

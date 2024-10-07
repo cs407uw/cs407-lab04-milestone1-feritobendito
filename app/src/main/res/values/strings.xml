@@ -3,4 +3,5 @@
     <string name="download">DOWNLOADING...</string>
     <string name="start">START</string>
     <string name="cancelled">Download Cancelled</string>
+    <string name="complete">Download Complete</string>
 </resources>
